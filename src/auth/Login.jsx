@@ -44,7 +44,7 @@ export const Login = () => {
           onClick={signInWithGoogle}
           className="bg-violet-600 w-full py-2 text-white active:bg-violet-600 md:hover:bg-violet-700 md:active:bg-violet-500 rounded-lg font-semibold"
         >
-          Add transaction
+          Continue with Google
         </button>
       </div>
     </div>
