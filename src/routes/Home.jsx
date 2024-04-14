@@ -1,13 +1,14 @@
 /** @format */
 
-import Header from "./components/Header";
-import Balance from "./components/Balance";
-import Incomeexpense from "./components/IncomeExpense";
-import TransectionList from "./components/TransectionList";
-import NewTransaction from "./components/NewTransaction";
+import Header from "../components/Header";
+import Balance from "../components/Balance";
+import Incomeexpense from "../components/IncomeExpense";
+import TransectionList from "../components/TransectionList";
+import NewTransaction from "../components/NewTransaction";
 import { useSelector } from "react-redux";
+import { UserDetails } from "../components/UserDetails";
 
-function App() {
+function Home() {
   const transactions = useSelector((store) => store.Transaction);
 
   // Declaring expense and income
@@ -27,7 +28,8 @@ function App() {
   });
 
   return (
-    <div className="bg-gray-100 h-vh flex justify-center items-center">
+    <div className="bg-gray-100 h-vh flex flex-col justify-center items-center px-1">
+      <UserDetails />
       <div className="w-full max-w-sm">
         <Header />
         <div className="space-y-5">
@@ -42,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
