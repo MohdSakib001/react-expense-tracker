@@ -16,7 +16,7 @@ export const UserDetails = () => {
       //   If logout sucessfully than do this
       localStorage.clear("auth");
       alert("You want to log Out?");
-      navigate("/react-expense-tracker");
+      navigate("/");
     } catch (err) {
       console.error(err);
     }

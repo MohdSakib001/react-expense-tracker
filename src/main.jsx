@@ -10,15 +10,15 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/react-expense-tracker",
+    path: "/",
     element: <App />,
     children: [
       {
-        path: "/react-expense-tracker",
+        path: "/",
         element: <Login />,
       },
       {
-        path: "/react-expense-tracker/expense-tracker",
+        path: "/expense-tracker",
         element: <Home />,
       },
     ],
